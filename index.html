@@ -5,24 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        thead {
+            color: darkmagenta;
+        }
+
+        tbody {
+            color: darkslategray;
+        }
+
+        tfoot {
+            color: lightcoral;
+        }
+
+        table, th, td {
+            border: 1px solid blueviolet;
+
+        }
+
+    </style>
 </head>
 <body>
+    <h4>Elemento thead, tbody y tfoot</h4>
     <table>
-        <tr>
-            <th>Cabecera 1</th>
-            <th>Cabecera 2</th>
-            <th>Cabecera 3</th>
-        </tr>
-        <tr>
-            <td>Dato 1</td>
-            <td>Dato 2</td>
-            <td>Dato 3</td>
-        </tr>
-        <tr>
-            <td>Dato 1.1</td>
-            <td>Dato 2.2</td>
-            <td>Dato 3.3</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Mes</th>
+                <th>Ahorros</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Enero</td>
+                <td>$ 100</td>
+            </tr>
+            <tr>
+                <td>Febrero</td>
+                <td>$ 80</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Suma</td>
+                <td>$ 180</td>
+            </tr>
+        </tfoot>
     </table>
     
 </body>
