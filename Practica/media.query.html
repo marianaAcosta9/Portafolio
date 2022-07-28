@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            color: blueviolet;
+        }
+
+        .title {
+            font-size: 6rem;
+        }
+
+        .subtitle {
+            font-size: 4rem;
+        }
+
+        @media (orientation: landscape) {
+            .title {
+                color: aqua;
+            } 
+        }/* Cuando la pantalla es horizontal, se pinta el título de azul, si es vertical, se deja el color normal establecido en body*/
+
+        @media (orientation: landscape) and (max-width: 700px) {
+            .subtitle {
+                color: rgb(209, 246, 25);
+            } 
+        }/* Cuando la pantalla es un ancho menor a 700px y además es orientación horizontal, se pinta el subtítulo de amarillo, si una de esas condiciones no sirve, se deja el color normal establecido en body*/
+
+
+
+        
+
+        /*@media (max-width: 570px) {
+            body {
+                color: blue;
+            }
+        }Hace referencia al tamaño de la pantalla donde el usuario está viendo todo. Quiere decir que si la pantalla es menor de 700 px, entonces se toman los estilos dentro de media. EN este caso las letras se cambiarían azules si la pantalla es menor. */
+
+    </style>
+
+</head>
+<body>
+    <h1 class="title">Title</h1>
+    <h2 class="subtitle">Subtitle</h2>
+    
+</body>
+</html>
