@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .flex-container {
+        display: flex; /*Pone de manera horizontal todo*/
+        justify-content: space-around; /*divide el contenido entre todo el espacio que haya en la pantalla*/
+        background-color: brown;
+        border: 2px solid green;
+        flex-direction: row;
+        flex-wrap: wrap; /*Los elementos se van acomodando según el tamaño de la página, si se hace más pequeña, se bajan*/
+
+    }
+
+    .flex-container div {
+        background-color: aqua;
+        width: 100px;
+        text-align: center;
+        border: 1px solid blueviolet;
+    }
+</style>
+
+</head>
+<body>
+
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div style="order: 1;">5</div> <!--Esto se hace si quieres cambiar este número hasta el final, por que por default todos tienen número 0, entonces si le pones 1, automáticamente se va hasta el final de la fila. Aunque esto no debe utilizarse mas que en situaciones muy específicas pues es mejor acomodar los div en el orden que se quiere que aparezcan-->
+        <div>6</div>
+        <div style="order: 2;">7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+    
+</body>
+</html>
