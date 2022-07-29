@@ -8,16 +8,14 @@ body {
     box-sizing: border-box;
 }
 
-/*Estilo del Div que engloba todos los demás div*/
 .App {
-    /*Display: flex;*/
+    /*display: flex;*/
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
 }
 
-/*Estilo de la barra de navegación*/
 nav {
     position: sticky;
     top: 0px;
@@ -29,14 +27,6 @@ nav {
     transition: top 500ms ease-in-out;
 }
 
-/*Estilo de la etiqueta de la barra de navegación*/
-nav a {
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-}
- /*Estilo de los links de la barra de navegación*/
 .links {
     display: flex;
     margin: 0 -1em;
@@ -47,14 +37,25 @@ nav a {
     margin: 0 1em;
 }
 
-/*Estilo del logo*/
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+
+
+
+
+
+
 .logo {
     font-weight: bold;
     letter-spacing: 0.2em;
     text-transform: uppercase;
 }
 
-/*Estilo de etiquetas y cajas de texto para información de contacto*/
 label {
     margin: 10px;
 }
@@ -63,13 +64,11 @@ input {
     margin: 10 px;
 }
 
-/*Estilo de la tabla*/
 table, th, td {
     border: 1px dotted rgb(195, 11, 173);
     text-align: center;
 }
 
-/*Estilo botón de "envíame un correo"*/
 .mail {
     padding: 10px;
     background-color: rgb(150, 85, 160);
