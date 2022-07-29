@@ -1,78 +1,14 @@
 body {
-    margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: antiquewhite;
 }
 
-* {
-    box-sizing: border-box;
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.App {
-    /*display: flex;*/
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
+.btn-primary {
+    background-color: #66BFBF;
 }
 
-nav {
-    position: sticky;
-    top: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1.5rem 2rem;
-    background-color: rgb(204, 160, 102);
-    transition: top 500ms ease-in-out;
-}
-
-.links {
-    display: flex;
-    margin: 0 -1em;
-}
-
-.links a {
-    display: inline-block;
-    margin: 0 1em;
-}
-
-nav a {
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-}
-
-
-
-
-
-
-
-.logo {
-    font-weight: bold;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-}
-
-label {
-    margin: 10px;
-}
-
-input {
-    margin: 10 px;
-}
-
-table, th, td {
-    border: 1px dotted rgb(195, 11, 173);
-    text-align: center;
-}
-
-.mail {
-    padding: 10px;
-    background-color: rgb(150, 85, 160);
-    border-radius: 3px;
-    text-decoration: none;
-    color: antiquewhite;
-}
