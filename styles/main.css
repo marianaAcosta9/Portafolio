@@ -10,17 +10,17 @@ body {
 
 /*Estilo del Div que engloba todos los demás div*/
 .App {
-    /*Display: flex;*/
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    flex-direction: column;
+    flex-direction: column; 
+    text-align: center; */
 }
 
 /*Estilo de la barra de navegación*/
 nav {
     position: sticky;
-    top: 0px;
+    top: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -36,15 +36,17 @@ nav a {
     text-transform: uppercase;
     letter-spacing: 0.2em;
 }
+
  /*Estilo de los links de la barra de navegación*/
 .links {
-    display: flex;
-    margin: 0 -1em;
+    /* display: flex; */
+    /* margin-right: -1rem; */
 }
 
 .links a {
-    display: inline-block;
-    margin: 0 1em;
+    /* display: inline-block; */
+    /* margin: 0 1rem; */
+    margin-left: 2rem;
 }
 
 /*Estilo del logo*/
@@ -52,6 +54,13 @@ nav a {
     font-weight: bold;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
 }
 
 /*Estilo de etiquetas y cajas de texto para información de contacto*/
@@ -63,6 +72,13 @@ input {
     margin: 10 px;
 }
 
+.table-tec {
+    text-align: center;
+}
+
+.table-tec table {
+    margin: auto;
+}
 /*Estilo de la tabla*/
 table, th, td {
     border: 1px dotted rgb(195, 11, 173);
@@ -76,4 +92,16 @@ table, th, td {
     border-radius: 3px;
     text-decoration: none;
     color: antiquewhite;
+}
+
+textarea {
+    resize: none;
+}
+
+.main-footer {
+    text-align: center;
+}
+
+.main-footer a {
+    text-decoration: none;
 }
