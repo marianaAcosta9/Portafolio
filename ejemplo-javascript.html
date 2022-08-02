@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #title {
+        color: black;
+      }
+
+      #title:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Hola</h1>
+
+    <button onclick="javascript:iniciaAnimacion()">Press me</button>
+
+    <script>
+      //   const mainTitle = document.getElementById("title");
+      //   const name = prompt("Escrite tu nombre");
+      //   mainTitle.textContent = "Hola " + name;
+
+      // function prueba(name) {
+      //   alert('hola ' + name);
+      // }
+      // prueba('mariana');
+      // prueba('panchito');
+
+      // function prueba2() {
+      //   alert("hola");
+      // }
+
+      // const title = document.getElementById("title");
+      // title.onclick = function () {
+      //   alert('adios');
+      // };
+
+      function iniciaAnimacion() {
+        const title = document.getElementById("title");
+        let x = 0;
+
+        setInterval(function () {
+          title.style.marginLeft = x + "px";
+          x += 1; // x = x + 1;
+        }, 10);
+      }
+    </script>
+  </body>
+</html>
