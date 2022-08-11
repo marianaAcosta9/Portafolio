@@ -15,6 +15,10 @@ body {
     color: #f6f6e3;
 }
 
+.navbar-nav a:hover{
+    color: #6C5070;
+}
+
 .carousel-inner {
     padding: 10px 5rem 0 5rem;
     max-height: 400px;
